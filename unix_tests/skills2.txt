@@ -1,8 +1,0 @@
-Internet
-Unix
-Bash
-zsh
-vscode
-slack
-zoom
-discord

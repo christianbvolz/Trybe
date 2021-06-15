@@ -1,8 +1,0 @@
-amarelo
-azul
-branco
-laranja
-marrom
-roxo
-verde
-vermelho
