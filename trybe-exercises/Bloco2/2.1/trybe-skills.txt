@@ -3,6 +3,6 @@ O que eu vou aprender na Trye:
 - Unix
 - Bash
 - Git
+- Javascript
 - HTML
 - CSS
-
