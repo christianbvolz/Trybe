@@ -1,0 +1,29 @@
+
+.title {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+.listaulp {
+  background-color: rgb(170, 159, 159);
+  font-style:italic;
+}
+p {
+  font-family: monospace;
+  font-weight: 600px;
+  font-size: 3em;
+  line-height:2em;
+  text-decoration:overline;
+}
+body {
+  background-color: rgb(154, 255, 255);
+  text-align:center;
+  font-size: 16px;
+}
+.button {
+  background-color: black;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
