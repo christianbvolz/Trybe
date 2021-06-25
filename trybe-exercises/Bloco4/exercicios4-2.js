@@ -2,7 +2,7 @@
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (index = 0; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
   console.log(numbers[index]);
 }
 
@@ -11,7 +11,7 @@ for (index = 0; index < numbers.length; index += 1) {
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 
-for (index = 0; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
   soma += numbers[index];
 }
 
@@ -22,7 +22,7 @@ console.log(soma);
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 
-for (index = 0; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
   soma += numbers[index];
 }
 
@@ -33,7 +33,7 @@ console.log(soma/numbers.length);
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 
-for (index = 0; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
   soma += numbers[index];
 }
 
@@ -48,7 +48,7 @@ if (soma/numbers.length > 20) {
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let maiorNumero = numbers[0];
 
-for (index = 1; index < numbers.length; index += 1) {
+for (let index = 1; index < numbers.length; index += 1) {
   if (maiorNumero < numbers[index]) {
     maiorNumero = numbers[index];
   }
@@ -62,7 +62,7 @@ console.log(maiorNumero);
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let contador = 0;
 
-for (index = 0; index < numbers.length; index += 1) {
+for (let index = 0; index < numbers.length; index += 1) {
   if ((numbers[index] % 2) != 0) {
     contador += 1;
   }
@@ -79,7 +79,7 @@ if (contador === 0) {
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let menorNumero = numbers[0];
 
-for (index = 1; index < numbers.length; index += 1) {
+for (let index = 1; index < numbers.length; index += 1) {
   if (menorNumero > numbers[index]) {
     menorNumero = numbers[index];
   }
@@ -91,7 +91,7 @@ console.log(menorNumero);
 // Exercicio 8
 
 let resultado = [];
-for (index = 0; index < 25; index += 1) {
+for (let index = 0; index < 25; index += 1) {
   resultado[index]= index + 1;
 }
  console.log(resultado);
@@ -99,7 +99,7 @@ for (index = 0; index < 25; index += 1) {
  // Exercicio 9
 
 let resultado = [];
-for (index = 0; index < 25; index += 1) {
+for (let index = 0; index < 25; index += 1) {
   resultado[index]= index + 1;
   console.log(resultado[index]/2)
 }
