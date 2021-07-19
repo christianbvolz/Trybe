@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="nome">Nome:
+        <input type="text" name='nome' required maxlength="40" id="nome" placeholder="Nome">
+      </label>
+      <label for="e-mail">E-mail:
+        <input type="text" name='e-mail' required maxlength="50" id="e-mail" placeholder="E-mail">
+      </label>
+      <label for="cpf">CPF:
+        <input type="text" name='cpf' required maxlength="11" id="cpf" placeholder="CPF">
+      </label>
+      <label for="endereço">Endereço:
+        <input type="text" name='endereço' required maxlength="200" id="endereço" placeholder="Endereço">
+      </label>
+      <label for="cidade">Cidade:
+        <input type="text" name='cidade' required maxlength="28" id="cidade" placeholder="Cidade">
+      </label>
+      <label for="estado">Estado:
+        <select name="estado" id="estado" required></select>
+      </label>
+      <label for="tipo">Tipo:
+        <input type="radio" name="tipo" id="tipo" required checked value="Casa">Casa
+        <input type="radio" name="tipo" id="tipo" required value="Apartamento">Apartamento
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend></legend>
+      <label for="resumo">Resumo do currículo:
+        <textarea name="resumo" id="resumo" maxlength="1000" cols="30" rows="10"
+           required placeholder="Resumo do currículo"></textarea>
+      </label>
+      <label for="cargo">Cargo:
+        <input type="text" name="cargo" required maxlength="40" id="cargo" placeholder="Cargo">
+      </label>
+      <label for="descrição-cargo">Descrição do cargo:
+        <input type="text" name="descrição-cargo" required maxlength="500" id="descrição-cargo"
+          placeholder="Descrição do cargo">
+      </label>
+      <label for="data-inicio">Data do inicio (xx/xx/xxxx):
+        <input type="text" name="data-inicio" required maxlength="10" id="data-inicio" placeholder="Data do inicio">
+      </label>
+    </fieldset>
+    <button type="submit" id="btn-submit">Submit</button>
+
+  </form>
+  <div id="dados">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
