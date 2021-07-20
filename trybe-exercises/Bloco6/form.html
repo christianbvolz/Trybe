@@ -1,63 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+  <script src="/node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <form action="" method="get">
-    <fieldset>
-      <legend>Dados Pessoais</legend>
-      <label for="nome">Nome:
-        <input type="text" name='nome' required maxlength="40" id="nome" placeholder="Nome">
-      </label>
-      <label for="e-mail">E-mail:
-        <input type="text" name='e-mail' required maxlength="50" id="e-mail" placeholder="E-mail">
-      </label>
-      <label for="cpf">CPF:
-        <input type="text" name='cpf' required maxlength="11" id="cpf" placeholder="CPF">
-      </label>
-      <label for="endereço">Endereço:
-        <input type="text" name='endereço' required maxlength="200" id="endereço" placeholder="Endereço">
-      </label>
-      <label for="cidade">Cidade:
-        <input type="text" name='cidade' required maxlength="28" id="cidade" placeholder="Cidade">
-      </label>
-      <label for="estado">Estado:
-        <select name="estado" id="estado" required></select>
-      </label>
-      <label for="tipo">Tipo:
-        <input type="radio" name="tipo" id="tipo" required checked value="Casa">Casa
-        <input type="radio" name="tipo" id="tipo" required value="Apartamento">Apartamento
-      </label>
-    </fieldset>
-    <fieldset>
-      <legend></legend>
-      <label for="resumo">Resumo do currículo:
-        <textarea name="resumo" id="resumo" maxlength="1000" cols="30" rows="10"
-           required placeholder="Resumo do currículo"></textarea>
-      </label>
-      <label for="cargo">Cargo:
-        <input type="text" name="cargo" required maxlength="40" id="cargo" placeholder="Cargo">
-      </label>
-      <label for="descrição-cargo">Descrição do cargo:
-        <input type="text" name="descrição-cargo" required maxlength="500" id="descrição-cargo"
+  <main class="bg-light">
+    <form action="" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input class="form-control" type="text" name='nome' data-validate-field="name" id="nome" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input class="form-control" type="text" name='cpf' required maxlength="11" id="cpf" placeholder="CPF">
+        </div>
+        <div class="form-group">
+          <label for="endereço">Endereço:</label>
+          <input class="form-control" type="text" name='endereço' required maxlength="200" id="endereço" placeholder="Endereço">
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <input class="form-control" type="text" name='cidade' required maxlength="28" id="cidade" placeholder="Cidade">
+        </div>
+        <div class="form-group">
+          <label for="estado">Estado:</label>
+          <select class="form-control" name="estado" id="estado" required></select>
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <input  type="radio" name="tipo" id="tipo" required checked value="Casa">Casa
+          <input  type="radio" name="tipo" id="tipo" required value="Apartamento">Apartamento
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Curriculo</legend>
+        <div class="form-group">
+          <label for="resumo">Resumo do currículo:</label>
+          <textarea class="form-control" name="resumo" id="resumo" maxlength="1000" cols="30" rows="3" required
+          placeholder="Resumo do currículo"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cargo">Cargo:</label>
+          <input class="form-control" type="text" name="cargo" required maxlength="40" id="cargo" placeholder="Cargo">
+        </div>
+        <div class="form-group">
+          <label for="descrição-cargo">Descrição do cargo:</label>
+          <input class="form-control" type="text" name="descrição-cargo" required maxlength="500" id="descrição-cargo"
           placeholder="Descrição do cargo">
-      </label>
-      <label for="data-inicio">Data do inicio (xx/xx/xxxx):
-        <input type="text" name="data-inicio" required maxlength="10" id="data-inicio" placeholder="Data do inicio">
-      </label>
-    </fieldset>
-    <button type="submit" id="btn-submit">Submit</button>
-
-  </form>
-  <div id="dados">
-
+        </div>
+        <div class="form-group">
+          <label for="data-inicio">Data do inicio (xx/xx/xxxx):
+            <input class="form-control" type="text" name="data-inicio" required maxlength="10" id="data-inicio" placeholder="Data do inicio">
+          </label>
+        </div>
+      </fieldset>
+      <button class="btn btn-success" id="btn-submit">Submit</button>
+    </form>
+  </main>
+  <div class="form-group" id="dados">
   </div>
   <script src="script.js"></script>
 </body>
