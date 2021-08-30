@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+      // Exercicio 1
+      function changeText() {
+        document.getElementsByTagName('p')[1].innerText = "Formado e trabalhando com o que gosto.";
+      }
+      changeText();
+
+      // Exercicio 2
+
+      function changeColor() {
+        document.getElementsByClassName('main-content')[0].style.background = 'rgb(76,164,109)';
+      }
+      changeColor();
+
+      // Exwercicio 3
+
+      function changeColor2() {
+        document.getElementsByClassName('center-content')[0].style.background = 'rgb(255,255,255)';
+      }
+      changeColor2();
+
+      // Exercicio 4
+
+      function fixText() {
+        document.getElementsByTagName('h1')[0].innerText = "Exercício 5.1 - JavaScript";
+      }
+      fixText();
+
+      // Exercicio 5
+
+      function upperCaseText() {
+        document.getElementsByTagName('p')[1].innerText = document.getElementsByTagName('p')[1].innerText.toUpperCase();
+      }
+      upperCaseText();
+
+      // Exercicio 6
+
+      function allText() {
+        for (let index in document.getElementsByTagName('p')) {
+          console.log(document.getElementsByTagName('p')[index].innerHTML);
+        }
+      }
+      allText();
+
+    </script>
+  </body>
+</html>

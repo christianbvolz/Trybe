@@ -1,0 +1,50 @@
+body {
+  font-size: 1.5em;
+  margin: 1.5em;
+}
+
+h1 {
+  font-size: 1em;
+}
+img {
+  max-width: 100%;
+} 
+figure {
+  margin: 2em 0;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1299px){
+  body {
+    background-color: lightblue;
+    font-size: 2em;
+    margin: 1em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  figure {
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+
+} 
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: lightgreen;
+    font-size: 3em;
+    margin: 2em;
+    max-width: 1700px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  figure {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+  }
+
+} 
+
