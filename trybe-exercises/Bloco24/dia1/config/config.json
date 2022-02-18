@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "cb9090007",
+    "database": "b24d1",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "cb9090007",
+    "database": "b24d1",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "cb9090007",
+    "database": "b24d1",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
